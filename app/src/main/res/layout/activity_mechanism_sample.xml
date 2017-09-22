@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.liang.androiddevelopartc6_c15.componentMechanism.MechanismSampleActivity">
+
+    <Button
+        android:id="@+id/btn_send_broadcast"
+        android:text="send_broadcast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_start_service"
+        android:text="start service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btn_send_broadcast"/>
+
+    <Button
+        android:id="@+id/btn_bind_service"
+        android:text="bind service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btn_start_service"/>
+
+    <Button
+        android:id="@+id/btn_query_provider"
+        android:text="query content_provider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btn_bind_service"/>
+
+
+
+</android.support.constraint.ConstraintLayout>

@@ -32,7 +32,6 @@
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
-
         <activity
             android:name=".PropertyAnimationActivity"
             android:label="PropertyAnimationSample"
@@ -49,7 +48,6 @@
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
-
         <activity
             android:name=".ViewWidthChangeAnimationActivity"
             android:label="ViewWidthChangeSample"
@@ -66,8 +64,62 @@
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
+        <activity
+            android:name=".threadDemo.AsyncTaskSampleActivity"
+            android:label="AsyncTaskSample"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity">
+            </meta-data>
 
+            <intent-filter>
+                <action android:name="android.intent.action.RUN"/>
 
+                <category android:name="com.liang.androiddevelopartc6_c15.sample.SAMPLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".componentMechanism.MechanismSampleActivity"
+            android:label="MechanismSample"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity">
+            </meta-data>
+
+            <intent-filter>
+                <action android:name="android.intent.action.RUN"/>
+
+                <category android:name="com.liang.androiddevelopartc6_c15.sample.SAMPLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".componentMechanism.MechanismSampleService"
+            android:enabled="true"
+            android:exported="false">
+        </service>
+
+        <receiver
+            android:name=".componentMechanism.MechanismSampleReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.liang.androiddevelopartc6_c15.receiver_LAUNCH"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name=".componentMechanism.MechanismContentProvider"
+            android:authorities="com.androiddevelopart.provider"
+            android:enabled="true"
+            android:exported="true">
+        </provider>
     </application>
 
 </manifest>
